@@ -1,0 +1,142 @@
+@import "variables";
+@import "bases";
+@import "media-queries";
+
+/*====== Main ======*/
+.main {
+  width: 100%;
+  min-height: 95vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .container {
+    width: 34.3rem;
+    height: 61.1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+
+    .product__img {
+      min-height: 24rem;
+      border-radius: 1rem 1rem 0 0;
+      background: url(../images/image-product-mobile.jpg) center center / cover;
+
+      @include md {
+        min-width: 50%;
+        min-height: 45rem;
+        border-radius: 1rem 0 0 1rem;
+        background: url(../images/image-product-desktop.jpg) center center /
+          cover;
+      }
+    }
+
+    .product__infos {
+      padding: 2.4rem;
+
+      .product__description {
+        margin-bottom: 2.4rem;
+        h3 {
+          font-size: 1.2rem;
+          font-weight: 500;
+          line-height: 1.5rem;
+          letter-spacing: 0.5rem;
+          margin-bottom: 1.2rem;
+
+          @include md {
+            margin-bottom: 2rem;
+          }
+        }
+
+        h1 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          line-height: 3.2rem;
+          color: var(--gunmetal);
+          margin-bottom: 1.6rem;
+          font-family: var(--fraunces-font);
+
+          @include md {
+            margin-bottom: 2.4rem;
+          }
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 2.3rem;
+        }
+
+        @include md {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .product__price {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        h2 {
+          font-size: 3.2rem;
+          font-weight: 700;
+          line-height: 3.2rem;
+          color: var(--deep-aquamarine);
+          font-family: var(--fraunces-font);
+        }
+
+        span {
+          font-size: 1.3rem;
+          line-height: 2.3rem;
+          text-decoration: line-through;
+        }
+
+        @include md {
+          margin-bottom: 3rem;
+        }
+      }
+
+      .btn {
+        width: 100%;
+        padding: 1.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+        line-height: 1.7rem;
+        color: var(--white);
+        border-radius: 0.8rem;
+        background-color: var(--deep-aquamarine);
+        transition: 0.3s;
+
+        &:hover {
+          background-color: var(--deep-aquamarine-hover);
+        }
+      }
+
+      @include md {
+        padding: 3.2rem;
+      }
+    }
+
+    @include md {
+      width: 60rem;
+      height: 45rem;
+      flex-direction: row;
+    }
+  }
+}
+
+/*====== Footer ======*/
+.footer {
+  font-size: 1.2rem;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}

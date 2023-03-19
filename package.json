@@ -1,0 +1,29 @@
+{
+  "name": "product-preview-card-component",
+  "version": "1.0.0",
+  "description": "A HTML CSS challenge from Frontend Mentor",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass -w scss:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/douako-j/Product-preview-card-component.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "RESPONSIVE",
+    "MOBILE_FIRST",
+    "CHALLENGE"
+  ],
+  "author": "Jordan DOUAKOUTCHE",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/douako-j/Product-preview-card-component/issues"
+  },
+  "homepage": "https://github.com/douako-j/Product-preview-card-component#readme",
+  "dependencies": {
+    "sass": "^1.59.3"
+  }
+}
